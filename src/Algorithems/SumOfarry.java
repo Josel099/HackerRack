@@ -19,6 +19,7 @@ public class SumOfarry {
 			 arr[i]= sc.nextDouble();
 			  sum=sum+arr[i];
 		 }
+		 sc.close();
 		 System.out.println("The sum of the array is :" + sum);
 		 
 	
