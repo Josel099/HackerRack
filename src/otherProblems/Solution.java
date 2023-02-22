@@ -1,4 +1,4 @@
-package Normal;
+package otherProblems;
 
 import java.util.Scanner;
 
