@@ -10,7 +10,7 @@ public class Multiple10 {
 		int N = sc.nextInt();
 		
 		for(int i=1;i<11;i++) {
-			System.out.println(i+" × "+N+" = "+(i*N));
+			System.out.println(N+" x "+i+" = "+(i*N));
 			
 		}
 	}
