@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CompareTheTriplet {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc =new Scanner(System.in);
 		int[] result = new int [] {0,0};
 		int [] a=new int[3];
