@@ -23,7 +23,9 @@ public class MealsProblem {
 		int tipPrecent = scan.nextInt();
 		int taxPrecent = scan.nextInt();	
 		mealsCalculation(mealCost,tipPrecent,taxPrecent);
-		
+	
+		scan.close();
 	}
+	
 
 }
