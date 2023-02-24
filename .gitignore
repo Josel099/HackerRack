@@ -1,8 +1,5 @@
-bin/
-.classpath/
-.project/
-.settings/
+bin 
+.classpath
+.project
 haiman
-haiman/
-
 
