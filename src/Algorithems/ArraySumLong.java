@@ -11,19 +11,18 @@ public class ArraySumLong {
 		Long[] ar=new Long[10];
 		
 		Scanner sc=new Scanner(System.in);
-		Scanner sc1=new Scanner(System.in);
-		sc1.useDelimiter(" ");
+		
+		//sc.useDelimiter(" ");
 		int n =sc.nextInt();
 		long sum=0;
 		for(int i=0;i<n;i++) {
 			
-			ar[i]=sc1.nextLong();
+			ar[i]=sc.nextLong();
 			// sc.useDelimiter(", ");
 			sum=sum+ar[i];
 		
 		}
 		sc.close();
-		sc1.close();
 		System.out.println(sum);
 		
 	}
