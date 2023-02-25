@@ -1,5 +1,7 @@
-/bin
+.settings
+tore bin
+
 .classpath
 .project
 bin
-/.project
+
