@@ -45,8 +45,8 @@ for(int i=0;i<n;i++) {
 	}
 //System.out.println(sumDiagonal2);
 	System.out.println(Math.abs(sumDiagonal1-sumDiagonal2));
+	sc.close();
 	}
-
 }
 
 
