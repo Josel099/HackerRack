@@ -7,7 +7,7 @@ public class BirthdayCakeCandles {
 	public static void main(String[] args) {
 		
 		Scanner sc=new Scanner(System.in);
-		 long [] arr= new long[10000];
+		 long [] arr= new long[100000];
 		int n=sc.nextInt();
 		
 		for(int i=0;i<n;i++) {
