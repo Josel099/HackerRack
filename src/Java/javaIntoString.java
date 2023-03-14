@@ -1,7 +1,7 @@
 package Java;
 import java.util.*;
 import java.security.*;
-public class Solution {
+public class javaIntoString {
  public static void main(String[] args) {
 
   DoNotTerminate.forbidExit();
