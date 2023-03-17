@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author joselxavier
+ *
+ */
+module HackerRank {
+}
