@@ -15,7 +15,7 @@ public class GradingStudents {
 		for (int i=0;i<n;i++) {
 			grades[i]=sc.nextInt();
 		}
-		
+		sc.close();
 		for (int i=0;i<n;i++) {
 			if (grades[i]<38) 
 				System.out.println(grades[i]);
