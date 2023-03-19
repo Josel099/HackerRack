@@ -11,7 +11,7 @@ class Result1 {
     	for (int j=0 ; j<=10000 ; j++) {
     		
     		if (kang1==kang2) {
-    			return "Yes";
+    			return "YES";
     		}
     		
     		kang1+=v1;
@@ -19,7 +19,7 @@ class Result1 {
     		
     		
     	}
-		return "No";
+		return "NO";
 		
 
     }
