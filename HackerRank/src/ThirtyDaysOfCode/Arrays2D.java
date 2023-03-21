@@ -26,7 +26,7 @@ public class Arrays2D {
 		
 			int sum=0; //  for(int i=q;i<q+3;i++) { // loop's  for finding the hour glass shape
 			
-			for(int i=r;i<r+3;i++) { 		// row number 
+			for(int i=r;i<r+3;i++) { 	// row corresponding number 
 				
 			  
 			      for(int j=q;j<q+3;j++) {         // cloumn number
