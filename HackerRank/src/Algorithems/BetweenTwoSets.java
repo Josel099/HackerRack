@@ -23,11 +23,21 @@ public class BetweenTwoSets {
 			b[i]=sc.nextInt();
 			
 		}
-		sc.close();
-		// finding maximum value and minvalue of array 1 & 2
-		int minvalue =Arrays.stream(a).min().getAsInt();
-		int maxvalue =Arrays.stream(b).max().getAsInt();
 	
+		// finding maximum value and minvalue of array 1 & 2
+		int minvalue =100;
+		int maxvalue =0;
+		
+		for(int i=0;i<n;i++) {
+			if (minvalue > a[i]) {
+				minvalue = a[i] ;
+			}
+		}
+		for(int i=0;i<m;i++) {
+		if (maxvalue < b[i]) {
+			maxvalue = b[i];
+		}
+		}
 		
 		for(int val =minvalue; val<=maxvalue;val++ ) {
 			boolean condition1 = true;
@@ -47,7 +57,7 @@ public class BetweenTwoSets {
 				}}
 		
 	System.out.println(count);
-	
+	sc.close();
 	}
 	
 	}
