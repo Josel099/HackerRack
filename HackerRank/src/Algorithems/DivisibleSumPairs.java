@@ -3,7 +3,7 @@ package Algorithems;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-class Result {
+class solution {
 	
 	
 	public static int divisibleCount(int k ,List<Integer>ar) {
@@ -43,7 +43,7 @@ public class DivisibleSumPairs {
 		}
 		
 		
-		int result = Result.divisibleCount(k,ar);
+		int result = solution.divisibleCount(k,ar);
 		System.out.println(result);
 		
 	}
