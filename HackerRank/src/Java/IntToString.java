@@ -47,3 +47,62 @@ class DoNotTerminate {
  }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Birds {
+    public static int lowfrequency(List<Integer> birdType) {
+        Map<Integer, Integer> frequencyMap = new HashMap<>();
+        int maxFrequency = 0;
+        int maxBirdType = Integer.MAX_VALUE;
+
+        // Iterate through the list of bird types and count their frequency using a Map
+        for (int bird : birdType) {
+            int frequency = frequencyMap.getOrDefault(bird, 0) + 1;
+            frequencyMap.put(bird, frequency);
+
+            // Update the maximum frequency and bird type if the current bird type has a higher frequency
+            if (frequency > maxFrequency || (frequency == maxFrequency && bird < maxBirdType)) {
+                maxFrequency = frequency;
+                maxBirdType = bird;
+            }
+        }
+
+        return maxBirdType;
+    }
+}
+
+

@@ -8,31 +8,13 @@ import java.util.Scanner;
 	
 	public static int lowfrequency(List<Integer> birdType ) {
 	
-		int count =0 ;
-		int birdid=0;
+		
+		int  birdid = Integer.MAX_VALUE;
+		int maxFrequency = 0 ; 
+		int [] frequencyArray = new int[6];
 		
 		
-		for(int i=0;i<birdType.size();i++) {
-			int temp = 0 ;
-			for(int j=0; j<birdType.size() ; j++ ) {
-				
-				if(birdType.get(i) == birdType.get(j)) {
-					
-					temp++;
-					
-				}
-			}
-			if(temp > count) {
-				if(birdType.get(i) > birdid) {
-					birdid = birdType.get(i);
-					count = temp;
-				}
-				
-				
-			}
 			
-			
-		}
 		
 		
 		
