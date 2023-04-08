@@ -14,6 +14,28 @@ import java.util.Scanner;
 		int [] frequencyArray = new int[6];
 		
 		
+			for( int i : birdType) {
+				
+				frequencyArray[i]++;
+				
+			}
+			
+			for(int i =0 ; i< 6 ;i++ ) {
+				
+				if(maxFrequency < frequencyArray[i]) {
+					
+					maxFrequency = frequencyArray[i];
+					
+					birdid = i;
+					
+				}
+				else if (maxFrequency == frequencyArray[i] && i < birdid) {
+					
+					maxFrequency = frequencyArray[i];
+					
+					birdid = i;
+				}
+			}
 			
 		
 		
