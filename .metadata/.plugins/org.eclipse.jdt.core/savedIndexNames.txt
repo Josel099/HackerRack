@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/joselxavier/Desktop/persl/jx/HackerRank/.metadata/.plugins/org.eclipse.jdt.core
+3177648776.index
+1865797976.index
+3468314333.index

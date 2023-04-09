@@ -3,7 +3,7 @@ package Algorithems;
 import java.util.Scanner;
 
 
-class Result{
+class Result12{
 	public static String programmerDay(int year) {
 		
 		String date;
@@ -65,7 +65,7 @@ public class DayoftheProgrammer {
 		
 		int year = sc.nextInt();
 		
-		System.out.println(Result.programmerDay( year));
+		System.out.println(Result12.programmerDay( year));
 		
 	}
 

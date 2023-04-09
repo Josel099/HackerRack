@@ -1,0 +1,64 @@
+package Algorithems;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+ class Birds {
+	
+	
+	public static int lowfrequency(List<Integer> birdType ) {
+		
+		int count =0 ;
+		int birdid=0;
+		int temp = 0 ;
+		
+		for(int i=0;i<birdType.size();i++) {
+			
+			for(int j=0; j<birdType.size() ; j++ ) {
+				
+				if(birdType.get(i) == birdType.get(j)) {
+					
+					temp++;
+					
+				}
+			}
+			if(temp >= count) {
+				if(birdType.get(i) > birdid) {
+					birdid = birdType.get(i);
+					count = temp;
+				}
+				
+				
+			}
+			
+			
+		}
+		
+		
+		
+		return birdid;
+		
+	}
+}
+
+public class MigratoryBirds {
+
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		ArrayList<Integer> birdType = new ArrayList<>(n);
+		
+		for(int i=0 ; i<n ; i++) {
+			
+			int temp = sc.nextInt();
+			birdType.add(temp);
+		}
+		System.out.println(Birds.lowfrequency(birdType));
+		
+	}
+}
