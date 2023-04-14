@@ -23,26 +23,25 @@ class Stock {
     public static int sockMerchant(int n, List<Integer> ar) {
     
     	int sum = 0;
-    	int [] array = new int[100];
+    HashMap<Integer,Integer> freqMap = new HashMap <Integer,Integer>();
     	
     	for( int i : ar) {
     		
-    		array[i]++;
+    		freqMap.put(i,freqMap.getOrDefault(i,0) + 1);
     		//System.out.print(array[i] + " ,");
     	}
 
     	//System.out.println( "pairnum : ");
-    	for(int i =0  ;i< array.length;i++) {
+    	for(int i :freqMap.values()) {
     		
     			
-    			int pairNum = array[i]/2;
+    			int pairNum = i/2;
     			//System.out.print (  pairNum +" , ");
     			sum = sum + pairNum;
     		
     			//System.out.print("sum " + sum +" , ");
     
     		}
-    	
     	
     	
     	
