@@ -17,7 +17,7 @@ class pages {
 		
     int frontCount =0;
     int backCount = 0;
-    	//from the frond of the book 
+    	//from the frond to the page number specified  of the book 
     	for (int i = 1; i<=p; i++) {
     		frontCount++;
     	}
