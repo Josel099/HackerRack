@@ -6,14 +6,14 @@ public class EndofFile {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		int i = 1;
-		while(sc.hasNext()) {
-			String s= sc.nextLine();
+		while(s.hasNext()) {
+			String S= s.nextLine();
 			System.out.println(i +" "+ s);
 			i++;
 		}
-sc.close();
+s.close();
 	}
 
 }
