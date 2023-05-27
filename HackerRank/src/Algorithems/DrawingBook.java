@@ -1,7 +1,7 @@
 package Algorithems;
 
 
-import java.util.*;
+import java.util.Scanner;
 
 class pages {
 
@@ -11,8 +11,13 @@ class pages {
 		
 
     	int frontCount = p/2;
-    	int backCount = (n-p)/2;
+    	int backCount =(n-p)/2;
     	
+    	if(p%2 != 0 ) {
+    		if(n-p==1) {
+    			backCount=1;
+    		}
+    	}
     	return Math.min(frontCount, backCount);
     	
     }
