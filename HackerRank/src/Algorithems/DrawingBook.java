@@ -1,13 +1,7 @@
 package Algorithems;
 
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
 class pages {
 
@@ -15,27 +9,12 @@ class pages {
 
     public static int pageCount(int n, int p) {
 		
-    int frontCount =0;
-    int backCount = 0;
-    	//from the frond to the page number specified  of the book 
-    	for (int i = 1; i<=p; i++) {
-    		frontCount++;
-    	}
-    	frontCount = frontCount/2;
- 	
-    	if(n %2 != 0) {
-        	for (int i = n; i>=p ; i--) {
-        	backCount++;	
-        	}
-    	}else {
-    		
-    	}
 
+    	int frontCount = p/2;
+    	int backCount = (n-p)/2;
     	
+    	return Math.min(frontCount, backCount);
     	
-    	
-    	
-  return frontCount;
     }
 
 }
@@ -50,7 +29,7 @@ public class  DrawingBook  {
         int p = sc.nextInt();
 
         int result = pages.pageCount(n, p);
-
+        sc.close();
         System.out.println(result);
     }}
 
