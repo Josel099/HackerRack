@@ -8,7 +8,7 @@ import java.util.Scanner;
 		
 		 int demo;
 		 int result= -1 ;
-		 
+		 //for loop for finding the maximum budget products.
 		 for(int i=0 ; i< n;i++) {
 			 
 			 
